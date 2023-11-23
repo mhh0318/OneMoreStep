@@ -15,9 +15,9 @@ generator = torch.Generator(device=pipe.device).manual_seed(100)
 
 prompt = "a starry night"
 
-image = pipe(prompt, guidance_scale=7.5, num_inference_steps=20, oms_guidance_scale=2., generator=generator)
+image = pipe(prompt, guidance_scale=7.5, num_inference_steps=20, oms_guidance_scale=1., generator=generator)
 
-image['images'][0].save('sd15_wo_oms.png')
+image['images'][0].save('sd15_oms_ng.png')
 
 # pass "oms_flag = False" to unload OMS module
 
