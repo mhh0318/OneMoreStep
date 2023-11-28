@@ -1,6 +1,11 @@
 # One More Step: A Versatile Plug-and-Play Module for Rectifying Diffusion Schedule Flaws and Enhancing Low-Frequency Controls
 
-One More Step (OMS) module was proposed in [One More Step: A Versatile Plug-and-Play Module for Rectifying Diffusion Schedule Flaws and Enhancing Low-Frequency Controls](https://github.com/mhh0318/OneMoreStep)
+<a href="http://arxiv.org/abs/2311.15744"><img src="https://img.shields.io/badge/arXiv-2211.15744-b31b1b.svg" height=22.5></a>
+<a href="https://jabir-zheng.github.io/OneMoreStep/"><img src="https://img.shields.io/badge/Web-Project Page-brightgreen.svg" height=22.5></a>
+<a href="https://huggingface.co/spaces/h1t/oms_sdxl_lcm"><img src="https://img.shields.io/badge/HuggingFace-Space-purple.svg" height=22.5></a> 
+
+
+One More Step (OMS) module was proposed in [One More Step: A Versatile Plug-and-Play Module for Rectifying Diffusion Schedule Flaws and Enhancing Low-Frequency Controls](http://arxiv.org/abs/2311.15744)
 by *Minghui Hu, Jianbin Zheng, Chuanxia Zheng, Tat-Jen Cham et al.*
 
 By incorporating **one minor, additional step** atop the existing sampling process, it can address inherent limitations in the diffusion schedule of current diffusion models.  Crucially, this augmentation does not necessitate alterations to the original parameters of the model. Furthermore, the OMS module enhances control over low-frequency elements, such as color, within the generated images.
