@@ -27,6 +27,10 @@ git clone https://github.com/mhh0318/OneMoreStep.git
 cd OneMoreStep
 ```
 
+### HuggingFace Space
+
+Thanks to the community grant from [Huggingface](https://huggingface.co/), we are now hosting a online demo based on SDXL with LCM LoRA on [Huggingface Space](https://huggingface.co/spaces/h1t/oms_sdxl_lcm).
+
 
 ### SDXL
 
