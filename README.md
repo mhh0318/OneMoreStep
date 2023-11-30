@@ -44,7 +44,7 @@ from diffusers import StableDiffusionXLPipeline, LCMScheduler
 sd_pipe = StableDiffusionXLPipeline.from_pretrained("stabilityai/stable-diffusion-xl-base-1.0", torch_dtype=torch.float16, variant="fp16", add_watermarker=False).to('cuda')
 
 sd_scheduler = LCMScheduler.from_config(sd_pipe.scheduler.config)
-sd_pipe.load_lora_weights('latent-consistency/lcm-lora-sdxl'h, variant="fp16")
+sd_pipe.load_lora_weights('latent-consistency/lcm-lora-sdxl', variant="fp16")
 ```
 
 Following import the customized OMS pipeline to wrap the backbone and add OMS for sampling. We The required `.safetensor` files have been made accessible on the [h1t'sHuggingFace Hub](https://huggingface.co/h1t/). Currently, there are 2 choices for SDXL backbone, one is base OMS module with OpenCLIP text encoder [h1t/oms-b-openclip-xl](https://huggingface.co/h1t/oms_b_openclip_xl) and the other is large OMS module with two text encoder followed by SDXL architecture [h1t/oms_l-mixclip-xl](https://huggingface.co/h1t/oms_b_mixclip_xl).
